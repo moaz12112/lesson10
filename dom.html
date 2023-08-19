@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" href="css/new_style.css">
+    
+    <script>
+        function change(){
+            // let elem = document.getElementsByTagName("p")[3];
+            // elem.setAttribute("class", "c1");
+            document.title = "AAAAAAAAAAAAAAAAA";
+        }
+    </script>
+</head>
+<body>    
+    <div>
+        <p>Hello</p>
+        <p>My Name is Ahmad</p>
+    </div>
+
+    <div>
+        <p>Hello</p>
+        <p>My Name is Yaser</p>
+    </div>
+
+    <button onclick="change()">click me</button>
+    <script>
+        let e = document.getElementsByTagName("div")[1];
+        console.log(e.removeChild(e.children[0]));
+        //e.setAttribute("htr","mvalue");
+
+    </script>
+    <script src="dom.js"></script>
+</body>
+</html>
